@@ -1,7 +1,24 @@
-import ReactDOM from "react-dom";
-// import { product } from "./mocks/products"
+// import { StrictMode } from "react";
+// import ReactDOM from "react-dom";
 
-import MainPage from "./main-page/main-page";
+// import MainPage from "./main-page/main-page";
+
+// const rootElement = document.getElementById("root");
+// ReactDOM.render(
+//   <StrictMode>
+//     <MainPage />
+//   </StrictMode>,   
+//   rootElement
+// );
+
+import { StrictMode } from "react";
+import ReactDOM from "react-dom";
+import App from "/src/components/app/app";
 
 const rootElement = document.getElementById("root");
-ReactDOM.render(<MainPage />, rootElement);
+ReactDOM.render(
+  <StrictMode>
+    <App />
+  </StrictMode>,
+  rootElement
+);
